@@ -7,7 +7,6 @@
 */
 
 int main(void)
-
 {
 	char l;
 
@@ -15,17 +14,19 @@ int main(void)
 	l = 'a';
 
 	while (l <= 'z')
-
 	{
-		if (l == 'q' || l == 'e')
-
-			continue;
-		else
+		if ((l != 'q') && (l != 'e'))
 		{
+
 			putchar(l);
 
 			l++;
+
 		}
+		else
+
+			l++;
+
 
 	}
 
