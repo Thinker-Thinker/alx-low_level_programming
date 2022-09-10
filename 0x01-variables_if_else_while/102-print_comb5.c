@@ -19,11 +19,11 @@ int main(void)
 					if ((i == k && j == l) || (i  == l && j == k))
 						continue;
 
-					putchar(k);
-					putchar(l);
-					putchar(' ');
 					putchar(i);
 					putchar(j);
+					putchar(' ');
+					putchar(k);
+					putchar(l);
 					if (j == '8' && i == '9' && k == '9' && l == '9')
 						break;
 					putchar(',');
