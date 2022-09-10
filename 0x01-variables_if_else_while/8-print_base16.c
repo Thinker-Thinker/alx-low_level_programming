@@ -12,13 +12,13 @@ int main(void)
 
 	char j;
 
-	j = '1';
+	j = '0';
 
 	l = 'a';
 
 	while (j <= '9')
 	{
-	
+
 		putchar(j);
 
 		j++;
