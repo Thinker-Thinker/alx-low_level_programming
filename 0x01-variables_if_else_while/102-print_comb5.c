@@ -18,7 +18,8 @@ int main(void)
 				{
 					if ((i == k && j == l) || (i  == l && j == k))
 						continue;
-
+					if ((10 * k + l) > (10 * i + j))
+					{
 					putchar(i);
 					putchar(j);
 					putchar(' ');
@@ -30,6 +31,7 @@ int main(void)
 					putchar(' ');
 				}
 			}
+		}
 		}
 	}
 	putchar('\n');
