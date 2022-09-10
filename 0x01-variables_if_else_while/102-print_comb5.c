@@ -16,9 +16,6 @@ int main(void)
 			{
 				for (l = '0'; l <= '9'; l++)
 				{
-/*					if ((i == k && j == l) || (i  == l && j == k))
-*				continue;
-*/
 					if ((10 * k + l) > (10 * i + j))
 					{
 					putchar(i);
