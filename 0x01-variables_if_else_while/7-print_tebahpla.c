@@ -11,8 +11,6 @@ int main(void)
 {
 	char l;
 
-	char j;
-
 	l = 'z';
 
 	while (l >= 'a')
