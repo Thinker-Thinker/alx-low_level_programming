@@ -16,7 +16,7 @@ int main(void)
 			{
 				for (l = '0'; l <= '9'; l++)
 				{
-					if ((i == k && j == l) || (i  == l && j == k))
+					if ((i == k && j == l) || (i  == l && j == k) || (i == j && k == l))
 						continue;
 
 					putchar(i);
