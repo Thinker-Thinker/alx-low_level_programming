@@ -1,12 +1,11 @@
 #include "main.h"
 /**
 * _abs - Entry point
-*@int: test integer
+*@n: test integer
 * Return: Always 0 (Success)
 */
-int _abs(int)
+int _abs(int n)
 {
-	int n;
 
 	if (n < 0)
 	{
