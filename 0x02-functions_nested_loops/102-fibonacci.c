@@ -7,9 +7,9 @@
 */
 int main(void)
 {
-	int i;
-	int fib;
-	int temp;
+	long int i;
+	long int fib;
+	long int temp;
 	int count;
 	
 	i = 0;
