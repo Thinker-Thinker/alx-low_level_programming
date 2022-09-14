@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* jack_bauer - Entry point
+* times_table - Entry point
 *
 * Return: Always 0 (Success)
 */
@@ -19,7 +19,7 @@ void times_table(void)
 			{
 				_putchar(k / 10 + '0');
 				_putchar(k % 10 + '0');
-				if (j == 9 && i == 9)
+				if (j == 9 )
 					continue;
 				else
 				{
