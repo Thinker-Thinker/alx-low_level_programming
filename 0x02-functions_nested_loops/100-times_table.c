@@ -1,20 +1,18 @@
 #include "main.h"
 /**
-* times_table - Entry point
-*
+* print_times_table - Entry point
+*@n: integer
 * Return: Always 0 (Success)
 */
-void times_table(void)
+void print_times_table(int n)
 {
 	int i;
 	int j;
 	int k;
-	int count1;
-	int count2;
 
-	for (i = 0; i <= count1; i++)
+	for (i = 0; i <= n; i++)
 	{
-		for (j = 0; j <= count2; j++)
+		for (j = 0; j <= n; j++)
 		{
 			k = i * j;
 			if (j == 0)
