@@ -22,7 +22,7 @@ int main(void)
 		fib = fib + i;
 		if (fib >= 100000000000000)
 		{
-			printf("%li%li", fib / 100000000000000, fib %100000000000000)
+			printf("%li%li", fib / 100000000000000, fib % 100000000000000);
 		}
 		else
 			printf("%li, ", fib);
