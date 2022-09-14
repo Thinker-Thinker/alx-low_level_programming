@@ -31,7 +31,7 @@ void jack_bauer(void)
 						i = '2';
 						j = '9';
 						k = '5';
-						l = '9'
+						l = '9';
 					}
 				}
 			}
