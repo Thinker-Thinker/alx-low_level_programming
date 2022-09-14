@@ -8,10 +8,10 @@
 */
 int main(void)
 {
-	unsigned long i;
-	unsigned long fib;
-	unsigned long  temp;
-	unsigned long  count;
+	unsigned long i = 0;
+	unsigned long fib = 1;
+	unsigned long  temp = 0;
+	unsigned long  count = 1;
 	unsigned long i1;
 	unsigned long  i2;
 	unsigned long  fib1;
@@ -19,10 +19,6 @@ int main(void)
 	unsigned long  temp1;
 	unsigned long  temp2;
 
-	i = 0;
-	fib = 1;
-	temp = 0;
-	count = 1;
 	while (count < 93)
 	{
 		temp = fib;
