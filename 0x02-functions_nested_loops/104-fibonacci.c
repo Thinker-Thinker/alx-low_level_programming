@@ -48,7 +48,7 @@ int main(void)
 		i2 = temp2;
 		count++;
 	}
-	printf("%lu%lu\n", (fib1 + i1 + (fib2 + i2) / N), (fib2 + i2) % N;
+	printf("%lu%lu\n", (fib1 + i1 + (fib2 + i2) / N), (fib2 + i2) % N);
 	return (0);
 }
 
