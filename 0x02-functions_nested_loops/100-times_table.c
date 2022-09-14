@@ -28,8 +28,8 @@ void print_number(int n)
 */
 void print_times_table(int n)
 {
-	int i; 
-	int j; 
+	int i;
+	int j;
 	int k;
 
 	if (n < 15)
