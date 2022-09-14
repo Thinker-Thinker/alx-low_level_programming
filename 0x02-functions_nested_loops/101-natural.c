@@ -14,7 +14,9 @@ int main(void)
 
 	for (i = 0; i < 1024; i++)
 	{
+		
 		if ( i % 3 == 0 || i % 5 == 0)
+			printf("%i", sum);
 			sum = sum + i;
 		else
 			break;
