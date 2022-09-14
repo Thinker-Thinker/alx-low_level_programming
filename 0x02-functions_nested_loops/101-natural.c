@@ -19,6 +19,7 @@ int main(void)
 		else
 			break;
 	}
-	printf("%i", sum);
+printf("%i", sum);
+return (0);
 }
 
