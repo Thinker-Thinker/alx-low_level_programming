@@ -7,10 +7,10 @@
 */
 int main(void)
 {
-	float i;
-	float fib;
-	float temp;
-	float count;
+	int i;
+	int fib;
+	int temp;
+	int count;
 
 	i = 0;
 	fib = 1;
@@ -20,11 +20,11 @@ int main(void)
 	{
 		temp = fib;
 		fib = fib + i;
-		printf("%.0f, ", fib);
+		printf("%i, ", fib);
 		i = temp;
 		count++;
 	}
-	printf("%.0f\n", fib + i);
+	printf("%i\n", fib + i);
 	return (0);
 }
 
