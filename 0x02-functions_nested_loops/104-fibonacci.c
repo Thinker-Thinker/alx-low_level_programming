@@ -8,7 +8,16 @@
 */
 int main(void)
 {
-	unsigned long i; fib; temp; count; i1; i2; fib1; fib2; temp1; temp2;
+	unsigned long i;
+	unsigned long fib;
+	unsigned long  temp;
+	unsigned long  count;
+	unsigned long i1;
+	unsigned long  i2;
+	unsigned long  fib1;
+	unsigned long  fib2;
+	unsigned long  temp1;
+	unsigned long  temp2;
 
 	i = 0;
 	fib = 1;
