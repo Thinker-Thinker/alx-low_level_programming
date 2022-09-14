@@ -20,16 +20,16 @@ int main(void)
 	{
 		temp = fib;
 		fib = fib + i;
-		if (fib >= 1000000000000000000)
+		if (fib >= 10000000000000000000)
 		{
-			printf("%li%li, ", fib / 1000000000000000000, fib % 1000000000000000000);
+			printf("%li%li, ", fib / 10000000000000000000, fib % 10000000000000000000);
 		}
 		else
 			printf("%li, ", fib);
 		i = temp;
 		count++;
 	}
-	printf("%li%li\n", fib / 1000000000000000000, fib % 1000000000000000000);
+	printf("%li%li\n", fib / 10000000000000000000, fib % 10000000000000000000);
 	return (0);
 }
 
