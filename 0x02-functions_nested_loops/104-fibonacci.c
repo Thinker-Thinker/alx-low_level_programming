@@ -20,11 +20,11 @@ int main(void)
 	{
 		temp = fib;
 		fib = fib + i;
-		printf("%f, ", fib);
+		printf("%.0f, ", fib);
 		i = temp;
 		count++;
 	}
-	printf("%f\n", fib);
+	printf("%.0f\n", fib + i);
 	return (0);
 }
 
