@@ -9,7 +9,7 @@ void print_number(int n)
 {
 	if (n < 10)
 		_putchar(n +'0');
-	if (n >= 10 && n < 100);
+	if (n >= 10 && n < 100)
 	{
 		_putchar(n / 10 + '0');
 		_putchar(n % 10 + '0');
@@ -31,7 +31,7 @@ void print_times_table(int n)
 {
 	int i; int j; int k;
 
-	if (n >15
+	if (n >15 )
 	{
 		for (i = 0; i <= n; i++)
 		{
