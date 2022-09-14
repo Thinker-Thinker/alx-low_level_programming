@@ -7,10 +7,10 @@
 */
 int main(void)
 {
-	int i;
-	int fib;
-	int temp;
-	int count;
+	unsigned long i;
+unsigned long fib;
+	unsigned long temp;
+	unsigned long count;
 
 	i = 0;
 	fib = 1;
@@ -20,11 +20,11 @@ int main(void)
 	{
 		temp = fib;
 		fib = fib + i;
-		printf("%i, ", fib);
+		printf("%lu, ", fib);
 		i = temp;
 		count++;
 	}
-	printf("%i\n", fib + i);
+	printf("%lu\n", fib + i);
 	return (0);
 }
 
