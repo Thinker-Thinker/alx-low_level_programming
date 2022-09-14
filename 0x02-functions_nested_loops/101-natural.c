@@ -19,6 +19,6 @@ int main(void)
 		else
 			break;
 	}
-	printf(sum);
+	printf("%i", sum);
 }
 
