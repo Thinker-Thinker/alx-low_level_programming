@@ -21,7 +21,7 @@ int main(void)
 		else
 			continue;
 	}
-printf("%i", sum);
+printf("%i\n", sum);
 return (0);
 }
 
