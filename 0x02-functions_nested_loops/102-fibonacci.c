@@ -11,13 +11,13 @@ int main(void)
 	long int fib;
 	long int temp;
 	int count;
-	
+
 	i = 0;
 	fib = 1;
-	temp= 0;
-	count = 0;
+	temp = 0;
+	count = 1;
 
-	while(count <= 50)
+	while (count < 50)
 	{
 		temp = fib;
 		fib = fib + i;
