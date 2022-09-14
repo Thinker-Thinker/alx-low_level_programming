@@ -21,11 +21,11 @@ int main(void)
 	{
 		temp = fib;
 		fib = fib + i;
-		printf("%i, ", fib);
+		printf("%li, ", fib);
 		i = temp;
 		count++;
 	}
-	printf("%i\n", fib + i);
+	printf("%li\n", fib + i);
 	return (0);
 }
 
