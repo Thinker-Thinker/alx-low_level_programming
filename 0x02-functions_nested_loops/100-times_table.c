@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 * print_times_table - Entry point
 *@n: integer
@@ -22,8 +23,7 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(k / 10 + '0');
-				_putchar(k % 10 + '0');
+				printf("%i", k);
 			}
 			else
 			{
