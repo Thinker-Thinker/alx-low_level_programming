@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-* add - Entry point
-*@i: integer
-*@j: intyeger
+* mul - Entry point
+*@a: integer
+*@b: intyeger
 * Return: Always 0 (Success)
 */
-int add(int i, int j)
+int mul(int a, int b)
 {
 
-	return (i + j);
+	return (a * b);
 }
