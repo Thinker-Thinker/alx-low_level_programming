@@ -2,7 +2,7 @@
 
 #define HEADER_H_
 
-
+int _isdigit(int c);
 
 int _putchar(char c);
 
