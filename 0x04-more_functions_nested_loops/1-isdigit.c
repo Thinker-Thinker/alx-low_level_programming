@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _isupper - Entry point
+* _isdigit - Entry point
 *@c: character value of integer c
 * Return: Always 0 (Success)
 */
