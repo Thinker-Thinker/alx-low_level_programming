@@ -4,6 +4,7 @@
 
 int mul(int a, int b);
 
+void print_numbers(void);
 
 int _isdigit(int c);
 
