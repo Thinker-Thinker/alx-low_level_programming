@@ -4,6 +4,8 @@
 
 int mul(int a, int b);
 
+void print_square(int size);
+
 void print_diagonal(int n);
 
 void print_line(int n);
