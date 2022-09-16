@@ -20,11 +20,10 @@ void print_triangle(int size)
 			{
 				if (count <= (size - j))
 					_putchar(' ');
-				else			
+				else
 					_putchar('#');
 			}
 			_putchar('\n');
-		
 		}
 	}
 }
