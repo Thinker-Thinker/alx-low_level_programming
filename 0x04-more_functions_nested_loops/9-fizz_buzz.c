@@ -2,24 +2,24 @@
 
 /**
 * main - Entry point
-*@i: integer
+*@a: integer
 * Return: Always 0 (Success)
 */
 
 void main(void)
 {
-	int i;
+	int a;
 
-	for (i = 1; i <= 99; i++)
+	for (a = 1; a <= 99; a++)
 	{
-		if (i % 3 == 0 && i % 5 != 0)
+		if (a % 3 == 0 && a % 5 != 0)
 			printf("Fizz ");
-		else if (i % 5 == 0 && i % 3 != 0)
+		else if (a % 5 == 0 && a % 3 != 0)
 			printf("Buzz ");
-		else if (i % 5 == 0 && i % 3 == 0)
+		else if (a % 5 == 0 && a % 3 == 0)
 			printf("FizzBuzz ");
 		else
-			printf("%i ", i);
+			printf("%i ", a);
 	}
 	printf("Buzz\n");
 }
