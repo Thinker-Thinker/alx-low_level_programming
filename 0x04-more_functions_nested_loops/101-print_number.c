@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-	unsigned long a;
+	float a;
 
 	a = n;
 
