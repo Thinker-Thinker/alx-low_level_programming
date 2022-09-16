@@ -2,13 +2,15 @@
 #include "main.h"
 /**
 *main - Entry point
-*@a: integer
+*a: integer
 * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	for (int a = 1; a <= 99; a++)
+	int a;
+
+	for (a = 1; a <= 99; a++)
 	{
 		if (a % 3 == 0 && a % 5 == 0)
 			printf("FizzBuzz ");

@@ -1,4 +1,3 @@
-#include "main.h"
 
 /**
 * print_triangle - Entry point
@@ -20,11 +19,15 @@ void print_triangle(int size)
 		{
 			for (count = 1; count <= (size - j); count++)
 			{
-				_putchar(' ');
-			}
-			for (i = 1; i <= j; i++)
-			{
-				_putchar('#');
+				if (count == size -j)
+				{
+					for (i = 1; i <= j; i++)
+					{
+						_putchar('#');
+					}
+				}
+				else
+					_putchar(' ');
 				_putchar('\n');
 			}
 		
