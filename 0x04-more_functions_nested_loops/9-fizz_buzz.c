@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
 * main - Entry point
-*@i: ineger
+*@i: integer
 * Return: Always 0 (Success)
 */
+
 void main(void)
 {
 	int i;
@@ -21,4 +23,3 @@ void main(void)
 	}
 	printf("Buzz\n");
 }
-
