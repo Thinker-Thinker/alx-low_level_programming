@@ -8,11 +8,7 @@
 
 int main(void)
 {
-	int a;
-
-	a = 1;
-
-	for ( ; a <= 99; a++)
+	for (int a = 1; a <= 99; a++)
 	{
 		if (a % 3 == 0 && a % 5 == 0)
 			printf("FizzBuzz ");
