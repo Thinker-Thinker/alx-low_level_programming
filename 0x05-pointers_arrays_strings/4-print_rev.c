@@ -4,7 +4,7 @@
 *@s: pointer
 * Return: Always 0 (Success)
 */
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	int i;
 	int rev
