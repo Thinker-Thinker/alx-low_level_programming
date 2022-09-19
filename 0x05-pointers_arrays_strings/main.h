@@ -2,7 +2,10 @@
 
 #define HEADER_H_
 
+void swap_int(int *a, int *b);
+
 void reset_to_98(int *n);
+
 int mul(int a, int b);
 
 void print_triangle(int size);
