@@ -2,6 +2,8 @@
 
 #define HEADER_H_
 
+void print_rev(char *s);
+
 void _puts(char *str);
 
 int _strlen(char *s);
