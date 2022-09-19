@@ -9,7 +9,7 @@ void rev_string(char *s)
 	int i;
 	char temp[5000];
 
-	temp[] = *s;
+	temp[5000] = *s;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 	}
