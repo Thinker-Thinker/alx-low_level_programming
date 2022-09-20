@@ -21,7 +21,6 @@ void rev_string(char *s)
 		j++;
 
 	}
-	*s = m;
 }
 
 
