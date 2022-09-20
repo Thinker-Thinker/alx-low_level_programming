@@ -10,19 +10,17 @@ void rev_string(char *s)
 	char m[5000];
 	int j;
 
-
-	j = 0;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 	}
 	j = i;
-/*	for (; s[i - 1] != '\0'; i--)
+	for (; s[i - 1] != '\0'; i--)
 	{
-		m[j - i] = s[i - 1];
+		m[] = s[i - 1];
 		_putchar(i);
 
 	}
-	s = m;*/
+	s = m;
 }
 
 
