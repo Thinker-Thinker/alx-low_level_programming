@@ -15,10 +15,12 @@ void rev_string(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 	}
+	j = i;
 	for (; s[i - 1] != '\0'; i--)
 	{
-		m[j] = s[i-1];
-		j++;
+		m[j - i] = s[i - 1];
+		_putchar(i);
+
 	}
 	s = m;
 }
