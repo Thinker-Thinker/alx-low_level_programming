@@ -16,13 +16,13 @@ void rev_string(char *s)
 	{
 	}
 	j = i;
-	for (; s[i - 1] != '\0'; i--)
+/*	for (; s[i - 1] != '\0'; i--)
 	{
 		m[j - i] = s[i - 1];
 		_putchar(i);
 
 	}
-	s = m;
+	s = m;*/
 }
 
 
