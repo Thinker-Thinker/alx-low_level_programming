@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*@_strncpy: - Entry point
+*_strncpy - Entry point
 *@dest: pointer
 *@n: integer
 *@src: pointer
