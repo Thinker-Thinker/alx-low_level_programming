@@ -4,7 +4,7 @@
 * _strncat - Entry point
 *@dest: pointer
 *@src: pointer
-*n: integer
+*@n: integer
 * Return: Always 0 (Success)
 */
 
