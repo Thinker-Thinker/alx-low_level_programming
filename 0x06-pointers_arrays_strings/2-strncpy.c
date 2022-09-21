@@ -20,9 +20,14 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (j = 0; j <= n && src[j]; j++)
 	{
-		dest[k] = src[j];
+		dest[j] = src[j];
+	}
+	for ( j <= k && src[j]; j++)
+	{
+		dest[k] = '\0';
 		k++;
 	}
+
 	return (dest);
 }
 
