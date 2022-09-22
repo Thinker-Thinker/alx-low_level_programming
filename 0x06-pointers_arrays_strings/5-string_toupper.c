@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * string_toupper - Entry point
-*s: pointer
+*@s: pointer
 *
 * Return: Always 0 (Success)
 */
