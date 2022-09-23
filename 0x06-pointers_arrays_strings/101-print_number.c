@@ -1,145 +1,91 @@
 #include "main.h"
 
-/**
-
-   * digits - Numbers digits of a number
-
-    * @n: Number
-
-     * Return: Digits
-
-      */
-
-unsigned int digits(unsigned int n)
-
-{
-
-		int i;
-
-
-
-			i = 0;
-
-				while (n != 0)
-
-						{
-
-									i++;
-
-											n /= 10;
-
-												}
-
-
-
-					return (i);
-
-}
-
 
 
 /**
 
-   * pow_x10 - Custom pow
+   * print_number - takes an integer and prints it with _putchar
 
-    * @exponent: Exponent number
+    * @n: integer to print
 
-     * Return: Return the divisor
+     *
 
-      */
+      * Return: void
 
-unsigned int pow_x10(unsigned int exponent)
-
-{
-
-		unsigned int res, i;
-
-
-
-			res = 1;
-
-				for (i = 1; i < exponent; i++)
-
-						{
-
-									res *= 10;
-
-										}
-
-
-
-					return (res);
-
-}
-
-/**
-
-   * print_number - Print a number
-
-    * @n: Number
-
-     */
+       */
 
 void print_number(int n)
 
 {
 
-		unsigned int div, aux, dig;
+		int a0, a1, a2, a3, a4, a5, a6, a7, a8, a9;
+
+			int s0, s1, s2, s3, s4, s5, s6, s7, s8;
 
 
 
-			if (n == 0)
+				a0 = n / 1000000000; s0 = a0; a1 = (n / 100000000) % 10; s1 = s0 + a1;
 
-					{
+					a2 = (n / 10000000) % 10; s2 = s1 + a2;
 
-								_putchar('0');
+						a3 = (n / 1000000) % 10; s3 = s2 + a3;
 
-										return;
+							a4 = (n / 100000) % 10; s4 = s3 + a4;
 
-											}
+								a5 = (n / 10000) % 10; s5 = s4 + a5;
 
-				else if (n < 0)
+									a6 = (n / 1000) % 10; s6 = s5 + a6; a7 = (n / 100) % 10; s7 = s6 + a7;
 
-						{
+										a8 = (n / 10) % 10; s8 = s7 + a8; a9 = n % 10;
 
-									aux = -n;
+											if (n < 0)
 
-											_putchar('-');
+													{
 
-												} else
+																_putchar('-');
 
-														{
+																		a0 *= -1; a1 *= -1; a2 *= -1; a3 *= -1; a4 *= -1;
 
-																	aux = n;
+																				a5 *= -1; a6 *= -1; a7 *= -1; a8 *= -1; a9 *= -1;
 
-																		}
+																					}
 
+												if (s0 != 0)
 
+															_putchar('0' + a0);
 
-													dig = digits(aux);
+													if (s1 != 0)
 
-														div = pow_x10(dig);
+																_putchar('0' + a1);
 
-															while (aux > 0)
+														if (s2 != 0)
 
-																	{
+																	_putchar('0' + a2);
 
-																				_putchar(aux / div + 48);
+															if (s3 != 0)
 
-																						aux = aux % div;
+																		_putchar('0' + a3);
 
-																								div = div / 10;
+																if (s4 != 0)
 
-																										dig--;
+																			_putchar('0' + a4);
 
+																	if (s5 != 0)
 
+																				_putchar('0' + a5);
 
-																												if (aux == 0 && dig == 1)
+																		if (s6 != 0)
 
-																																_putchar('0');
+																					_putchar('0' + a6);
 
-																													}
+																			if (s7 != 0)
 
+																						_putchar('0' + a7);
 
+																				if (s8 != 0)
+
+																							_putchar('0' + a8);
+
+																					_putchar('0' + a9);
 
 }
