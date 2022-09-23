@@ -2,6 +2,8 @@
 
 #define HEADER_H_
 
+char *leet(char *);
+
 char *_strncpy(char *dest, char *src, int n);
 
 char *string_toupper(char *);
