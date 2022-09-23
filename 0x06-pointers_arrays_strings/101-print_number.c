@@ -50,7 +50,7 @@ void print_number(int n)
 
 																					}
 
-												if (s0 != 0)
+												if (a0 != 0)
 
 															_putchar('0' + a0);
 
