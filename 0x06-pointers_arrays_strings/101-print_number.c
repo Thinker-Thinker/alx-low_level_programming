@@ -1,5 +1,4 @@
 #include "main.h"
-#define N 1000000000000000
 
 /**
 * print_number - Entry point
