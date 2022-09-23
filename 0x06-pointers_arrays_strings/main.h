@@ -2,6 +2,8 @@
 
 #define HEADER_H_
 
+char *rot13(char *);
+
 char *leet(char *);
 
 char *_strncpy(char *dest, char *src, int n);
