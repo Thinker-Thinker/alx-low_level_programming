@@ -1,38 +1,145 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-* print_number - Entry point
-*@n:integer
-* Return: Always 0 (Success)
-*/
 
-void print_number(int n)
+   * digits - Numbers digits of a number
+
+    * @n: Number
+
+     * Return: Digits
+
+      */
+
+unsigned int digits(unsigned int n)
+
 {
-	if (n < 0)
-	{
-		_putchar('-');
-		n = n * -1;
-	}
 
-	if (n >= 1000000000)
-		_putchar((n % 10000000000) / 1000000000 + '0');
-	if (n >= 100000000)
-		_putchar((n % 1000000000) / 100000000 + '0');
-	if (n >= 10000000)
-		_putchar((n % 100000000) / 10000000 + '0');
-	if (n >= 1000000)
-		_putchar((n % 10000000) / 1000000 + '0');
-	if (n >= 100000)
-		_putchar((n % 1000000) / 100000 + '0');
+		int i;
 
-	if (n >= 10000)
-		_putchar((n % 100000) / 10000 + '0');
-	if (n >= 1000)
-		_putchar((n % 10000) / 1000 + '0');
-	if (n >= 100)
-		_putchar((n % 1000) / 100 + '0');
-	if (n >= 10)
-		_putchar((n % 100) / 10 + '0');
-	_putchar(n % 10 + '0');
+
+
+			i = 0;
+
+				while (n != 0)
+
+						{
+
+									i++;
+
+											n /= 10;
+
+												}
+
+
+
+					return (i);
+
 }
 
+
+
+/**
+
+   * pow_x10 - Custom pow
+
+    * @exponent: Exponent number
+
+     * Return: Return the divisor
+
+      */
+
+unsigned int pow_x10(unsigned int exponent)
+
+{
+
+		unsigned int res, i;
+
+
+
+			res = 1;
+
+				for (i = 1; i < exponent; i++)
+
+						{
+
+									res *= 10;
+
+										}
+
+
+
+					return (res);
+
+}
+
+/**
+
+   * print_number - Print a number
+
+    * @n: Number
+
+     */
+
+void print_number(int n)
+
+{
+
+		unsigned int div, aux, dig;
+
+
+
+			if (n == 0)
+
+					{
+
+								_putchar('0');
+
+										return;
+
+											}
+
+				else if (n < 0)
+
+						{
+
+									aux = -n;
+
+											_putchar('-');
+
+												} else
+
+														{
+
+																	aux = n;
+
+																		}
+
+
+
+													dig = digits(aux);
+
+														div = pow_x10(dig);
+
+															while (aux > 0)
+
+																	{
+
+																				_putchar(aux / div + 48);
+
+																						aux = aux % div;
+
+																								div = div / 10;
+
+																										dig--;
+
+
+
+																												if (aux == 0 && dig == 1)
+
+																																_putchar('0');
+
+																													}
+
+
+
+}
