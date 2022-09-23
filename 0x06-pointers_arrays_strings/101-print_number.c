@@ -54,35 +54,35 @@ void print_number(int n)
 
 															_putchar('0' + a0);
 
-													if (s1 != 0)
+													if (a1 != 0)
 
 																_putchar('0' + a1);
 
-														if (s2 != 0)
+														if (a2 != 0)
 
 																	_putchar('0' + a2);
 
-															if (s3 != 0)
+															if (a3 != 0)
 
 																		_putchar('0' + a3);
 
-																if (s4 != 0)
+																if (a4 != 0)
 
 																			_putchar('0' + a4);
 
-																	if (s5 != 0)
+																	if (a5 != 0)
 
 																				_putchar('0' + a5);
 
-																		if (s6 != 0)
+																		if (a6 != 0)
 
 																					_putchar('0' + a6);
 
-																			if (s7 != 0)
+																			if (a7 != 0)
 
 																						_putchar('0' + a7);
 
-																				if (s8 != 0)
+																				if (a8 != 0)
 
 																							_putchar('0' + a8);
 
