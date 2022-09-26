@@ -1,16 +1,20 @@
 #include "main.h"
 /**
-* _memset - Entry point
+* _strchr - Entry point
 *@s: pointer
-*@b: character
-*@n: integer
+*@c: character
 * Return: Always 0 (Success)
 */
-char *_memset(char *s, char b, unsigned int n)
+char *_strchr(char *s, char c)
 {
 	unsigned int i;
 
-	for (i = 0; i < n; i++)
-		s[i] = b;
-	return (s);
+	for (i = 0; s[i]; i++)
+	{
+		if ( s[i] == c)
+			return (s + i);
+	}
+	if (s[i] == c)
+		return (s + i);
+	return (0);
 }
