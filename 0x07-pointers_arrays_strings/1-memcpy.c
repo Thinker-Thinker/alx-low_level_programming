@@ -2,7 +2,7 @@
 /**
 * _memcpy - Entry point
 *@dest: pointer
-*@source: character
+*@src: character
 *@n: integer
 * Return: Always 0 (Success)
 */

@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-* _strspn - Entry point
+* _strpbrk - Entry point
 *@s: pointer
-*@accept: pointer
+*@accept:pointer
 * Return: Always 0 (Success)
 */
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, j, k;
 
@@ -17,11 +17,9 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				k++;
-				break;
+				return (s + i);
 			}
 		}
-		if (s[i] != accept[j])
-			break;
 	}
-	return (k);
+	return (0);
 }
