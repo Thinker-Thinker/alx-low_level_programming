@@ -18,7 +18,7 @@ int main(void)
 
 {
 
-	    char *s = "hello, wor";
+	    char *s = "hello, world";
 
 	        char *f = "world";
 

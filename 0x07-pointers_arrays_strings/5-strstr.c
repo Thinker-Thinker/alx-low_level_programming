@@ -13,7 +13,7 @@ char *_strstr(char *haystack, char *needle)
 	for (i = 0; haystack[i]; i++)
 	{
 			j = 0; 
-			while (needle[j] && (haystack[i] == needle[0]))
+			while (haystack[i + j] && needle[j] && (haystack[i] == needle[0]))
 			{
 				if (haystack[i + j] == needle[j])
 					j++;
