@@ -8,7 +8,7 @@
 */
 void print_diagsums(int *a, int size)
 {
-	unsigned int i, j, k, l, m, n;
+	int i, j, k, l, m, n;
 
 	k = 0;
 	l = 0;
@@ -25,7 +25,5 @@ void print_diagsums(int *a, int size)
 		l = (size * i) + (size - 1 - i);
 		n += a[l];
 	}
-	printf ("%u %u\n", k, n);
-		
-	
+	printf("%i %i\n", m, n);
 }
