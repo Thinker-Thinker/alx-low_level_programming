@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 * _strstr - Entry point
 *@haystack: pointer
@@ -11,17 +12,18 @@ char *_strstr(char *haystack, char *needle)
 
 	for (i = 0; haystack[i]; i++)
 	{
-		if (haystack[i] == needle[0])
-		{
-			for (j = 0; needle[j]; j++)
+			j = 0; 
+			while (needle[j] && (haystack[i] == needle[0]))
 			{
-				if (haystack[i] == needle[j])
-					i++;
+				if (haystack[i + j] == needle[j])
+					j++;
 				else
 					break;
 			}
-			return (haystack + i - j);
-		}
+			if (needle[j])
+				break;
+			else
+				return (haystack + i);
 
 	}
 	return (0);
