@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
 * print_diagsums - Entry point
 *@a: pointer
@@ -25,7 +25,7 @@ void print_diagsums(int *a, int size)
 		l = (size * i) + (size - 1 - i);
 		n += a[l];
 	}
-	printf ("%li %li\n", k, n);
+	printf ("%u %u\n", k, n);
 		
 	
 }
