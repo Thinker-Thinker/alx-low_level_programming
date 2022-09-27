@@ -17,13 +17,13 @@ void print_diagsums(int *a, int size)
 	for (j = 0; j < size; j++)
 	{
 		k = (size * j) + j;
-		m += a[k];
+		m += *(a + k);
 
 	}
 	for (i = 0; i < size; i++)
 	{
 		l = (size * i) + (size - 1 - i);
-		n += a[l];
+		n += *(a + l);
 	}
 	printf("%i %i\n", m, n);
 }
