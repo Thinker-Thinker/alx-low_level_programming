@@ -2,6 +2,7 @@
 
 #define HEADER_H_
 
+void set_string(char **s, char *to);
 
 void print_diagsums(int *a, int size);
 
