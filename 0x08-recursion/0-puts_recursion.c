@@ -1,15 +1,17 @@
 #include "main.h"
 /**
-* _memset - Entry point
+* _puts_recursion - Entry point
 *@s: pointer
-*@b: character
-*@n: integer
 * Return: Always 0 (Success)
 */
 void _puts_recursion(char *s)
 {
-	unsigned int i;
+	int i;
 
-	for (i = 0; i != '\0'; i++)
-		_putchar(s[i] + '0');
+	_putchar(s[i] + '0');
+	if (s[i] == '\0')
+		_putchar('\n');
+	else
+		_puts_recursion(s[i + 1]);
+
 }
