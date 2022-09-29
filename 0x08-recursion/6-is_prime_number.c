@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*sqrt_calc- Entry point
+*prime_calc- Entry point
 *@n: integer
 *@j: integer
 * Return: Always 0 (Success)
