@@ -9,7 +9,7 @@ int sqrt_calc(int n, int j)
 {
 	if (j * j == n)
 		return (j);
-	sqrt_calc(n, j + 1);
+	return (sqrt_calc(n, j + 1));
 }
 
 /**
