@@ -2,6 +2,8 @@
 
 #define HEADER_H_
 
+int factorial(int n);
+
 int _strlen_recursion(char *s);
 
 void _puts_recursion(char *s);
