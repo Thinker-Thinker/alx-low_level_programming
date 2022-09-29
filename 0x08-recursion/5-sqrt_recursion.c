@@ -2,7 +2,7 @@
 /**
 *sqrt_calc- Entry point
 *@n: integer
-@j: integer
+*@j: integer
 * Return: Always 0 (Success)
 */
 int sqrt_calc(int n, int j)
