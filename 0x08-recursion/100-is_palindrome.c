@@ -1,14 +1,32 @@
 #include "main.h"
+
 /**
-* _prinnt_rev_recursion - Entry point
+* _strlen - return length of string
+* @str: string to check
+*
+* Return: length of str
+*/
+int _strlen(char *str)
+{
+if (*str == '\0')
+	return (0);
+else
+	return (1 + _strlen(str + 1));
+}
+/**
+* palindrome - Entry point
 *@s: pointer
+*@i: integer
+*@j: integer
 * Return: Always 0 (Success)
 */
-char _prinnt_rev_recursion(char *s)
+int palindrome(int i, int j, char *s)
 {
-	if (*s == '\0')
+	if (*s >= i)
+		return (1);
+	if (s[i] != s[j])
 		return (0);
-	_prinnt_rev_recursion(s + 1);
+	palindrome(i + 1, j - 1, s);
 	return (*s);
 
 
@@ -21,20 +39,10 @@ char _prinnt_rev_recursion(char *s)
 */
 int is_palindrome(char *s)
 {
-	char *j;
 	int i;
-	
-	i = 0;
-	if (*s == ' ')
-		return (1);
-	j = _prinnt_rev_recursion(s);
-	if (s[i] ==j[i])
-	{
-		for (i = 0; s[i] == j[i]; i++)
-			{}
-		return (1);
-	}
-	return (0);
+
+	i = _strlen(s);
+	return (palindrome(0, i, s));
 
 
 }
