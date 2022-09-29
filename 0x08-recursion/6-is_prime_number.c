@@ -7,10 +7,10 @@
 */
 int prime_calc(int n, int j)
 {
-	if (n % j == 0)
-		return (0);
 	if (j == 1)
 		return (1);
+	if (n % j == 0)
+		return (0);
 	return (prime_calc(n, j - 1));
 }
 
