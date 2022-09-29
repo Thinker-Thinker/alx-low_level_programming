@@ -26,7 +26,7 @@ int is_palindrome(char *s)
 	i = 0;
 	if (*s == ' ')
 		return (1);
-	j = _print_rev_recursion(s)
+	j = _print_rev_recursion(s);
 	if (s[i] ==j[i])
 	{
 		for (i = 0; s[i] == j[i]; i++)
