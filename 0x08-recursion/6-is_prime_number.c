@@ -1,19 +1,28 @@
 #include "main.h"
 /**
-* _pow_recursion - Entry point
-*@x: pointer
-*@y: pointer
+*sqrt_calc- Entry point
+*@n: integer
+*@j: integer
 * Return: Always 0 (Success)
 */
-int _pow_recursion(int x, int y)
+int prime_calc(int n, int j)
 {
-	if (y < 0)
-		return (-1);
-	if (y == 0)
+	if (n % j == 0)
+		return (0);
+	if (j == 1)
 		return (1);
+	return (sqrt_calc(n, j - 1));
+}
 
-	if (y == 1)
-		return (x);
-	return (x * _pow_recursion(x, y - 1));
+/**
+*is_prime_number - Entry point
+*@n: pointer
+* Return: Always 0 (Success)
+*/
+int is_prime_number(int n)
+{
+	if (n <= 1)
+		return (0);
+	return (prime_calc(n, n));
 
 }
