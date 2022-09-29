@@ -11,7 +11,7 @@ int prime_calc(int n, int j)
 		return (0);
 	if (j == 1)
 		return (1);
-	return (sqrt_calc(n, j - 1));
+	return (prime_calc(n, j - 1));
 }
 
 /**
