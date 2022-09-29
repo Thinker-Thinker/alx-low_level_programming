@@ -7,7 +7,7 @@
 char _prinnt_rev_recursion(char *s)
 {
 	if (*s == '\0')
-		return;
+		return (0);
 	_prinnt_rev_recursion(s + 1);
 	return (*s);
 
@@ -21,7 +21,8 @@ char _prinnt_rev_recursion(char *s)
 */
 int is_palindrome(char *s)
 {
-	char j, i;
+	char *j;
+	int i;
 	
 	i = 0;
 	if (*s == ' ')
