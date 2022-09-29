@@ -22,7 +22,7 @@ else
 */
 int palindrome(int i, int j, char *s)
 {
-	if (j > i)
+	if (j >= i)
 		return (1);
 	if (s[i] != s[j])
 		return (0);
