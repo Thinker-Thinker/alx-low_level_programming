@@ -15,7 +15,7 @@ char _print_rev_recursion(char *s)
 }
 
 /**
-* _print_rev_recursion - Entry point
+* is_palindrome - Entry point
 *@s: pointer
 * Return: Always 0 (Success)
 */
