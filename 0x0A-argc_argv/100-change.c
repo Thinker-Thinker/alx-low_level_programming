@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <ctype.h>
 #include <stdio.h>
 /**
 * main - prints the name of the program
@@ -8,21 +7,22 @@
 *
 * Return: always 0
 */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused))
+, char *argv[] __attribute__((unused)))
 {
 	int cent;
 	int sum;
 
 	sum = 0;
 	cent = atoi(argv[1]);
-	if (argc == 1)
-	{
-		printf("0\n");
-		return (0);
-	}
 	if (argc != 2)
 	{
-		printf("Error\n");
+		puts("Error");
+		return (1);
+	}
+	if (cent <= 0)
+	{
+		puts("0");
 		return (1);
 	}
 	while (cent >= 25)
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 		cent = cent - 2;
 		sum++;
 	}
-		while (cent >= 1)
+	while (cent >= 1)
 	{
 		cent = cent - 1;
 		sum++;
