@@ -3,7 +3,8 @@
 #include <stdlib.h>
 /**
 * str_concat - Entry point
-*@str:pointer  character value of integer c
+*@s1:pointer  character value of integer c
+*@s1:pointer  character value of integer c
 * Return: Always 0 (Success)
 */
 char *str_concat(char *s1, char *s2)
@@ -26,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 	for (j = 0; j < i; j++)
 		a[j] = s1[j];
 	for (j = 0; j < k; j++)
-		a[j + i - 1] = str[j];
+		a[j + i - 1] = s2[j];
 	return (a);
 }
 
