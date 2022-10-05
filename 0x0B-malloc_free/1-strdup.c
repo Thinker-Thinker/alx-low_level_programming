@@ -4,7 +4,6 @@
 /**
 * _strdup - Entry point
 *@str:pointer  character value of integer c
-
 * Return: Always 0 (Success)
 */
 char *_strdup(char *str)
