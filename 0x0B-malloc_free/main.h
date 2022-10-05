@@ -2,6 +2,8 @@
 
 #define HEADER_H_
 
+char *_strdup(char *str);
+
 char *create_array(unsigned int size, char c);
 
 char *rot13(char *);
