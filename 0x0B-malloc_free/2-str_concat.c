@@ -4,7 +4,7 @@
 /**
 * str_concat - Entry point
 *@s1:pointer  character value of integer c
-*@s1:pointer  character value of integer c
+*@s2:pointer  character value of integer c
 * Return: Always 0 (Success)
 */
 char *str_concat(char *s1, char *s2)
@@ -18,6 +18,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		a = malloc(sizeof(char));
 		a[0] = '\0';
+		return (a);
 	}
 	if (s1 != NULL)
 	{
