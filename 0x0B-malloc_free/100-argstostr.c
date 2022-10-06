@@ -2,7 +2,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
-* argostr - Entry point
+* argstostr - Entry point
 *@ac:integer  character value of integer c
 *@av :pointer  character value of integer c
 * Return: Always 0 (Success)
