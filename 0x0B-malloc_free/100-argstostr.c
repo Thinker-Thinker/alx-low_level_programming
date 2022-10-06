@@ -2,9 +2,9 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
-* str_concat - Entry point
-*@s1:pointer  character value of integer c
-*@s2:pointer  character value of integer c
+* argostr - Entry point
+*@ac:integer  character value of integer c
+*@av :pointer  character value of integer c
 * Return: Always 0 (Success)
 */
 char *argstostr(int ac, char **av)
@@ -13,11 +13,11 @@ char *argstostr(int ac, char **av)
 	int i, j, l, k;
 
 	k = 0;
-	l= 0;
+	l = 0;
 	if (ac <= 0 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
-	{		
+	{
 		for (k = 0; av[i][k]; k++)
 			l++;
 		l++;
