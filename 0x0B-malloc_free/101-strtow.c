@@ -8,8 +8,8 @@
 */
 char **strtow(char *str)
 {
-	char *a;
-	int i, j, l, k;
+	char **a;
+	int  j, l, k;
 
 	k = 0;
 	l = 0;
