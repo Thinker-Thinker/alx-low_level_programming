@@ -9,7 +9,6 @@
 */
 void free_grid(int **grid, int height)
 {
-	int **a;
 	int i;
 
 	if (grid == NULL || height <= 0)
