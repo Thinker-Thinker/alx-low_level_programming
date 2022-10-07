@@ -1,1 +1,2 @@
-Listen, for i am HIM!
+The Darkest moment is before dawn.
+`
