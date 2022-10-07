@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 #include <stdlib.h>
 /**
 * malloc_checked - Entry point
