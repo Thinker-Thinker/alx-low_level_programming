@@ -2,17 +2,24 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
-* malloc_checked - Entry point
-*@b: character value of integer c
+* array_range - Entry point
+*@min:minimum character value of integer c
+*@max: maximum character
 * Return: Always 0 (Success)
 */
-void *malloc_checked(unsigned int b)
+int *array_range(int min, int max)
 {
 	char *a;
+	int i, j;
 
-	a = malloc(b);
+	if (max < min)
+		return (NULL);
+	j = max - min + 1;
+	a = malloc(sizeof(int) * j);
 	if (a == NULL)
-		exit(98);
+		return (NULL);
+	for (i = 0; min + i < j; i++)
+		a[i] = min + i;
 	return (a);
 }
 
