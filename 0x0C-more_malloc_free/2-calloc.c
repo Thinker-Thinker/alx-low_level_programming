@@ -1,8 +1,10 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 /**
-* malloc_checked - Entry point
-*@b: character value of integer c
+* _calloc - Entry point
+*@nmemb: character value of integer c
+*@size: unsigned integer
 * Return: Always 0 (Success)
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -15,8 +17,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	a = malloc(nmemb * size);
 	if (a == NULL)
 		return (NULL);
-	for (i = 0; a[i]; i++)
-		a[i] = '0';
+	for (i = 0; i < nmemb * size; i++)
+	{
+		printf("%i", i);
+		a[i] = 0;
+	}
 	return (a);
 }
 
