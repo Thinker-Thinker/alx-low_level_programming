@@ -9,7 +9,7 @@
 */
 int *array_range(int min, int max)
 {
-	char *a;
+	int *a;
 	int i, j;
 
 	if (max < min)
