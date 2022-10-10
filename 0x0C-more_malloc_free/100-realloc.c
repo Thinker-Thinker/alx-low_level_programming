@@ -2,7 +2,8 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
-* ptr - Entry point
+* _realloc - Entry point
+*@ptr: pointer
 *@old_size: minimum character value of integer c
 *@new_size: maximum character
 * Return: Always 0 (Success)
