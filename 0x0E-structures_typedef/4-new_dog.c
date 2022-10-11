@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
-#include <stddef.h>
+
 /**
  * print_dog - initializes a structure of type dog
  * @d: pointer to structure
