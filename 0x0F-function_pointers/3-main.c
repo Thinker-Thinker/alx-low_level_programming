@@ -12,7 +12,7 @@
 */
 int main(int argc, char *argv[])
 {
-	int a, b, c, f;
+	int a, c, f;
 
 	if (argc != 4)
 	{
@@ -20,20 +20,14 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	a = atoi(argv[1]);
-	b = get_op_func(argv[2]);
 	c = atoi(argv[3]);
 
-	if (b == NULL)
+	if (get_op_func(argv[2]) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if (!(strcmp(argv[2], "/") || strcmp(argv[2], "%") &&
-	!(strcmp(argv[2], "0")
-	{
-		printf("Error\n");
-		exit(100);
-	}
+
 	f = get_op_func(argv[2])(a, c);
 	printf("%i\n", f);
 	return (0);
