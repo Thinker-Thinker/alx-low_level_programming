@@ -12,7 +12,7 @@ int op_add(int a, int b)
 }
 
 /**
-* op_add - check the code
+* op_sub - check the code
 *@a: integer
 *@b: integer
 * Return: int.
@@ -24,7 +24,7 @@ int op_sub(int a, int b)
 }
 
 /**
-* op_add - check the code
+* op_mul - check the code
 *@a: integer
 *@b: integer
 * Return: int.
@@ -35,7 +35,7 @@ int op_mul(int a, int b)
 }
 
 /**
-* op_add - check the code
+* op_div - check the code
 *@a: integer
 *@b: integer
 * Return: int.
@@ -46,7 +46,7 @@ int op_div(int a, int b)
 }
 
 /**
-* op_add - check the code
+* op_mod - check the code
 *@a: integer
 *@b: integer
 * Return: int.

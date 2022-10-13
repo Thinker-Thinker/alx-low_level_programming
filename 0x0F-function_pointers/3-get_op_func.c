@@ -2,9 +2,8 @@
 #include <stddef.h>
 
 /**
-* print_name - check the code
-*@name: Pointer
-*@f: pointer to func
+* get_op_func- check the code
+*@s: pointer
 * Return: Always 0.
 */
 int (*get_op_func(char *s))(int, int)
