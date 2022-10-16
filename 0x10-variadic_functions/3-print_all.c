@@ -12,13 +12,13 @@ void print_string(va_list list)
 	char *str;
 
 	str = va_arg(list, char *);
-	if (str)
-		printf("%s", str);
-	else
+	if (!str)
 	{
 		printf("(nil)");
 		return;
 	}
+	printf("%s", str);
+
 }
 
 /**
