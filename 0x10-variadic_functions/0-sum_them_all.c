@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdargs.h>
-#include "variadic-functions.h"
+#include <stdarg.h>
+#include "variadic_functions.h"
 
 /**
 * sum_them_all - it does what it says on the bottle. (-_-)
