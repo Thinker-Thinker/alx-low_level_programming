@@ -68,11 +68,12 @@ void print_all(const char * const format, ...)
 		{"c", print_char}
 	};
 
+	j = i = 0;
 	str = "";
 	va_start(list, format);
-	for (i = 0; format[i]; i++)
+	while (format[i])
 	{
-		for (j = 0; j < 4; j++)
+		while (j < 4)
 		{
 			if (*(ops[j].t) == format[i])
 			{
@@ -81,7 +82,10 @@ void print_all(const char * const format, ...)
 				str = ", ";
 				break;
 			}
+			j++;
 		}
+		j = 0;
+		i++;
 	}
 	va_end(list);
 	printf("\n");
