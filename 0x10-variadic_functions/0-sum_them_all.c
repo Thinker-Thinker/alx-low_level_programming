@@ -4,7 +4,7 @@
 
 /**
 * sum_them_all - it does what it says on the bottle. (-_-)
-*....: variadic variable
+*@n: no of variadic variable
 * Return: Always 0.
 */
 int sum_them_all(const unsigned int n, ...)
