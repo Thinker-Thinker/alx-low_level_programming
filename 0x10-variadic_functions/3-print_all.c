@@ -64,7 +64,7 @@ void print_all(const char * const format, ...)
 	p_opt ops[] = {
 		{"s", print_string},
 		{"i", print_integer},
-		{"f", print_float}
+		{"f", print_float},
 		{"c", print_char}
 	};
 
